@@ -1,0 +1,528 @@
+/* Start NavBar Styles */
+nav
+{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000
+}
+nav .navbar-nav
+{
+    margin: 0 45px
+}
+nav .navbar-nav .nav-item .shower i
+{
+    position: relative;
+    bottom: -4px;
+    margin: 0 5px
+}
+nav .navbar-nav .nav-item .notify i
+{
+    margin: 0 6px
+}
+nav .navbar-nav .dropdown-menu li i.logout,
+nav .navbar-nav .dropdown-menu li i.edit-profile
+{
+    margin: 0 5px
+}
+nav .navbar-nav .notify .header .notification,
+nav .navbar-nav .notify .header .new
+{
+    flex-basis: 50%;
+    padding: 3px 14px;
+    font-size: .8em;
+}
+nav .navbar-nav .notify .header .new small
+{
+    padding: 4px;
+    border-radius: 4px;
+    font-size: .7em;
+}
+nav .navbar-nav .media
+{
+    padding: 8px 0
+}
+nav .navbar-nav .media .ico
+{
+    padding: 0 10px
+}
+nav .navbar-nav .media .ico i
+{
+    font-size: 1.8em;
+    position: relative;
+    bottom: -16px;
+}
+nav .navbar-nav .media .info
+{
+    font-size: .7em;
+}
+nav .navbar-nav .media .info p
+{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+/* End NavBar Styles */
+
+/* Start Wraper Styles */
+/* Start Sidebar Styles */
+.wraper .sidebar::-webkit-scrollbar,
+.sub-menu-hover::-webkit-scrollbar {
+    width: 11px;
+    background-color: #BDC3C7;    /* color of the scroll thumb */
+}
+
+.wraper .sidebar::-webkit-scrollbar-thumb,
+.sub-menu-hover::-webkit-scrollbar-thumb {
+    background-color: #BDC3C7;    /* color of the scroll thumb */
+    border-radius: 5px;       /* roundness of the scroll thumb */
+    border: 5px solid #b7b7b7;  /* creates padding around scroll thumb */
+}
+.wraper .sidebar
+{
+    position: fixed;
+    top: 75px;
+    width: 300px;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #fff;
+    transition: all .3s ease-in-out;
+    z-index: 3000;
+}
+.wraper .sidebar .sidebar-nav li.dashboard
+{
+    background: #dcdcdc;
+}
+.wraper .sidebar .sidebar-nav li.has-sub
+{
+    position: relative;
+}
+.wraper .sidebar .sidebar-nav li a
+{
+    font-size: .92em;
+    padding: 17px 9px;
+    color: #74797e;
+    transition: all .3s ease-in-out;
+}
+.wraper .sidebar .sidebar-nav .sub-menu li:not(.sub-hovered-info) a
+{
+    font-size: .9em;
+    padding-top: 5px;
+}
+.wraper .sidebar .sidebar-nav li:not(li.main)
+{
+    padding: 0 5px;
+}
+.wraper .sidebar .sidebar-nav li:not(li.dashboard):hover >a.nav-link
+{
+    transform: translateX(-5px);
+    color: #000;
+}
+.wraper .sidebar .sidebar-nav li i
+{
+    margin: 0 8px;
+    font-size: 1.2em
+}
+.wraper .sidebar .sidebar-nav li i.show-sub
+{
+    position: relative;
+    bottom: -3px;
+    font-size: .9em;
+}
+.sub-menu
+{
+    display: none;
+}
+.tog-sidebar
+{
+    width: 65px !important;
+    overflow-y: visible !important;
+}
+.sub-hover-wraper
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.sub-menu-hover
+{
+    position: absolute;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px #eee;
+    min-width: 240px;
+    max-height: 280px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    z-index: 1000;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.sub-hovered-info
+{
+    display: none;
+}
+/* End Sidebar Styles */
+
+/* Start Main Content Styles */
+.wraper .main-content
+{
+    margin-top: 55px; /* navbar height */
+    transition: all .3s ease-in-out;
+}
+.wraper .main-content .wraper-content
+{
+    padding: 65px
+}
+.wraper .main-content .wraper-content .page-info
+{
+    padding-bottom: 25px;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+.wraper .main-content .wraper-content .page-info h2
+{
+    font-size: 1em;
+    font-weight: 900;
+    padding-bottom: 10px
+}
+.wraper .main-content .wraper-content .page-info div
+{
+    font-size: .9em;
+}
+.wraper .main-content .wraper-content .page-info div a
+{
+    text-decoration: none;
+}
+
+/* Start form Style */
+.form-control {
+    padding: .575rem .75rem !important;
+}
+.wraper .main-content .wraper-content .form-data
+{
+    padding: 30px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: .95em
+}
+.wraper .main-content .wraper-content .form-data .form-group
+{
+    padding-bottom: 25px
+}
+.wraper .main-content .wraper-content .form-data .form-group >label
+{
+    display: inline-block;
+    margin: 5px 0;
+    color: #666
+}
+.wraper .main-content .wraper-content .form-data .form-group input::placeholder
+{
+    color: #999
+}
+.hr
+{
+    margin-top: 30px
+}
+.success , .error, .ajax-success, .ajax-error
+{
+    display: block;
+    width: 100% !important;
+    text-align: center !important;
+    margin-top: 25px;
+    font-size: 1.1em !important;
+    padding: 13px 0
+}
+.success , .ajax-success{
+    color: #1ee789 !important;
+    border-color: #1ee789 !important;
+}
+.success:hover, .ajax-success:hover {
+    color: #fff !important;
+}
+.ajax-success, .ajax-error
+{
+    display: none;
+}
+/* Start Tap Style */
+div.tap
+{
+    padding: 12px
+}
+div.tap div.tap-links
+{
+    border-bottom: 1px solid #888;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+div.tap div.tap-links a
+{
+    border-radius: 0;
+    margin-bottom: -1px;
+    font-size: .95em;
+    color: #0d6efd;
+}
+div.tap div.tap-links a:focus {
+    outline: 0;
+    box-shadow: 0 0 0;
+}
+.active-link
+{
+    border: 1px solid #000;
+    border-bottom: 1px solid #fff;
+    color: #666 !important
+}
+div.tap .tap-content
+{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+div.tap .tap-content .tap-box
+{
+    display: none;
+    padding: 15px 0 0 !important;
+}
+.active-content
+{
+    display: block !important;
+}
+/* End Tap Style*/
+
+/* Start select2 style */
+.select2
+{
+    width: 100% !important;
+}
+.select2-selection
+{
+    height: 44.38px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 40px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 8px !important;
+}
+/* End select2 style */
+
+/* Start custom file upload style */
+.custom-file-upload
+{
+    position: relative;
+    height: 44px
+}
+.custom-file-upload >div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+.custom-file-upload div.main-file
+{
+    z-index: 2;
+    opacity: 0
+}
+.custom-file-upload div.custom-file
+{
+    display: flex;
+    z-index: 1;
+    font-size: 16px;
+}
+.custom-file-upload div.custom-file div.sec1
+{
+    width: 70%;
+    background: #eee;
+    padding-top: 9px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.custom-file-upload div.custom-file div.sec2
+{
+    width: 30%;
+    background: #0dcaf0;
+    text-align: center;
+    padding-top: 9px;
+    color: #eee
+}
+/* End custom file upload style */
+/* End form Style */
+
+/* Start table Style */
+.wraper .main-content .wraper-content .table-data
+{
+    background-color: #fff;
+}
+/* Start DataTable Style */
+.dataTables_scrollBody::-webkit-scrollbar {
+    width: 10px;
+}
+.dataTables_scrollBody::-webkit-scrollbar-track {
+    background: #fff;        /* color of the tracking area */
+}
+.dataTables_scrollBody::-webkit-scrollbar-thumb {
+    background-color: #eee;    /* color of the scroll thumb */
+}
+.dataTables_wrapper
+{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: .9em;
+}
+.dataTables_wrapper .dataTables_length {
+    float: none !important;
+    direction: ltr !important;
+    position: relative;
+    top: -15px
+}
+.dataTables_scroll
+{
+    padding-top: 20px
+}
+.dataTables_scrollHeadInner
+{
+    width: 100% !important
+}
+.table
+{
+    min-width: 100% !important;
+}
+.dataTables_scrollBody
+{
+    border-bottom: 0 !important;
+    padding-bottom: 8px
+}
+td, th
+{
+    border: 1px solid #eee !important;
+    border-collapse: collapse;
+    min-width: 140px !important;
+    white-space: nowrap;
+    padding: 10px !important;
+}
+table.dataTable, table.dataTable th, table.dataTable td {
+    box-sizing: border-box !important;
+}
+.dataTables_scrollHead thead th
+{
+    font-size: .9em !important;
+    padding: 10px 20px !important;
+}
+.dataTables_scrollBody thead th,
+.dataTables_scrollHead thead td
+{
+    padding: 5px 20px !important;
+    border: 0 !important;
+    background-image: none !important;
+}
+/* End Datatable style */
+/* End table Style */
+
+/* Start adding item quantities to stores */
+.sec
+{
+    padding: 10px 10px 3px;
+    margin: 10px 0;
+    background: #eee;
+}
+.add-sec,
+.add-store-sec,
+.add-price-sec
+{
+    overflow: hidden;
+}
+.add-sec h2,
+.add-store-sec h2,
+.add-price-sec h2
+{
+    font-size: 1em;
+    font-weight: 900;
+    padding-top: 13px;
+}
+.close
+{
+    border: 0 !important;
+    position: relative;
+    top: -32px;
+    font-size: 1.2em;
+    color: #999
+}
+.add-unit-quantity , .close-unit-quantity
+{
+    padding-top: 40px
+}
+.close-unit-quantity i
+{
+    padding: 0 2px;
+}
+.payable-custom-data
+{
+    padding-top: 15px
+}
+.payable-custom-data div
+{
+    padding: 10px
+}
+.payable-custom-data div span
+{
+    font-size: 1.7em;
+}
+.payable-custom-data div.payable-date
+{
+    text-align: right;
+}
+.payable-custom-data div.payable-code ,
+.payable-custom-data div.payable-type
+{
+    text-align: left
+}
+/* End adding item quantities to stores */
+
+div.home-logo img
+{
+    width: 100%;
+    height: 100%
+}
+
+/* End Main Content Styles */
+/* End Wraper Styles */
+
+/* Start Custom Media Query */
+@media (max-width: 992px)
+{
+    .navbar-nav {
+        flex-direction: row;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .navbar-collapse
+    {
+        display: flex;
+    }
+    nav .navbar-nav {
+        margin: 0;
+    }
+    .hide
+    {
+        display: none;
+    }
+    .mobile-icon
+    {
+        display: block !important
+    }
+    .dropdown-menu
+    {
+        position: absolute !important;
+    }
+}
+@media print {
+    .print, .dataTables_length, .dataTables_filter,
+    .dataTables_paginate, .dataTables_info{
+        display: none
+    }
+}
+/* End Custom Media Query */

@@ -1,0 +1,75 @@
+/* Start Main Rules For LTR */
+body {
+    direction: ltr;
+    font-size: .97em;
+}
+.item-name {
+    float: left;
+}
+.item-icon {
+    float: right;
+}
+.form-check {
+    padding-left: 1.25rem;
+}
+.form-check-input {
+    margin-left: -1.25rem;
+}
+.wrapper aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.wrapper aside .items a span.main-icon {
+    padding-right: 5px
+}
+.wrapper header .search-sec div.text-box .close {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    z-index: 1000;
+}
+.content-wrapper-toggle {
+    margin-left: 275px;
+}
+.toggle-aside {
+    transform: translateX(-290px);
+}
+.wrapper header .search-sec {
+    margin-left: auto !important;
+}
+.wrapper header .search-sec .dropdown-menu {
+    position: absolute;
+    top: 0px;
+    left: -30px !important;
+}
+.wrapper header .dropdown-menu .time {
+    position: relative;
+    bottom: -7px;
+    right: -8px;
+}
+.wrapper .content-wrapper .content .statistics .inner .icon {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+.calendar-content {
+    margin-left: 0 !important
+}
+.calendar-content .col-calendar {
+    padding-left: 0 !important;
+}
+.calendar-content .col-img {
+    padding-right: 0 !important;
+}
+table.dataTable thead th, table.dataTable thead td, table.dataTable tfoot th, table.dataTable tfoot td {
+    text-align: left !important;
+}
+/* End Main Rules For LTR */
+@media screen and (max-width: 992px) {
+    .calendar-content .col-calendar, .calendar-content .col-img {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+}

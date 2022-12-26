@@ -1,0 +1,80 @@
+/* Start ltr Rules */
+body
+{
+    font-family: 'Cairo', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.09em;
+}
+@font-face {
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Cairo-Regular'), local('Cairo-Regular'), url('../webfonts/Cairo-Regular.ttf') format('woff');
+}
+.text-dir
+{
+    text-align: left;
+}
+.sidebar-pos
+{
+    left: 0
+}
+.content-small
+{
+    margin-left: 70px !important; /* sidebar width */
+}
+.content-large
+{
+    margin-left: 270px; /* sidebar width */
+}
+.sub-menu-hover-pos
+{
+    left: 65px;
+}
+.submenu-padding
+{
+    padding: 0 0 0 35px !important;
+}
+.sub-list-icon
+{
+    margin: 0 10px 0 0 !important;
+}
+.form-check {
+    padding-left: 1.5em;
+}
+.form-check .form-check-input {
+    float: left;
+    margin-left: -1.5em;
+}
+.add-sec button,
+.add-store-sec button,
+.add-price-sec button
+{
+    float: right;
+}
+.add-sec h2,
+.add-store-sec h2,
+.add-price-sec h2
+{
+    float: left;
+}
+.close
+{
+    float: right
+}
+/* End ltr Rules */
+
+/* Start Custom Media Query */
+@media (max-width: 992px)
+{
+    .sidebar-toggle-small
+    {
+        transform: translateX(-300px);
+    }
+    .wraper .main-content
+    {
+        margin-left: 0 !important;
+    }
+}
+/* End Custom Media Query */

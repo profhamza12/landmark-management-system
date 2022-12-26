@@ -1,0 +1,77 @@
+/* Start Main Rules */
+body
+{
+    background: #eee;
+}
+/* End Main Rules */
+
+/* Start Admin Login Styles */
+div.main-content div.login
+{
+    max-width: 450px;
+    margin: 7.5% auto;
+    background-color: #fff;
+    border-radius: 5px;
+}
+div.main-content div.login form
+{
+    padding: 10px 0;
+}
+div.main-content div.login form div.logo img
+{
+    width: 80px;
+    height: 80px;
+}
+div.main-content div.login form h6
+{
+    font-size: .8em;
+    color: #999;
+    margin: 20px 0 50px 0;
+    border-bottom: 1px solid #999;
+}
+div.main-content div.login form h6 span
+{
+    background: #fff;
+    position: relative;
+    bottom: -7px;
+    padding: 0 8px
+}
+div.main-content div.login form div.inputs input:not(.form-check-input)
+{
+    padding: 0 12px;
+    height: 45px;
+    font-size: 17px
+}
+div.main-content div.login form div.inputs div.email input,
+div.main-content div.login form div.inputs div.password input,
+div.main-content div.login form div.submit input
+{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-top: 10px;
+}
+div.main-content div.login form div.inputs div.email input::placeholder,
+div.main-content div.login form div.inputs div.password input::placeholder
+{
+    color: #999;
+    font-size: .9em;
+}
+div.main-content div.login form div.inputs div.checkbox
+{
+    padding: 5px 0
+}
+div.main-content div.login form div.inputs div.checkbox label
+{
+    border: 0 !important;
+    padding: .4rem 0 !important;
+}
+div.main-content div.login form div.forgot-password a
+{
+    text-decoration: none;
+    padding-top: 10px;
+}
+.success , .error
+{
+    width: 100%
+}
+/* End Admin Login Styles */

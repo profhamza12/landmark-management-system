@@ -1,0 +1,90 @@
+/* Start rtl Rules */
+body
+{
+    font-family: 'Droid Kufi Arabic', serif;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Droid Kufi Arabic';
+    font-style: normal;
+    font-weight: 300;
+    src: local('DroidKufi-Regular'), local('DroidKufi-Regular'), url('../webfonts/DroidKufi-Regular.ttf') format('woff');
+}
+.text-dir
+{
+    text-align: right;
+}
+.sidebar-pos
+{
+    right: 0
+}
+.content-small
+{
+    margin-right: 70px !important; /* sidebar width */
+}
+.content-large
+{
+    margin-right: 270px; /* sidebar width */
+}
+.sub-menu-hover-pos
+{
+    right: 65px;
+}
+.submenu-padding
+{
+    padding: 0 35px 0 0 !important;
+}
+.sub-list-icon
+{
+    margin: 0 0 0 10px !important;
+}
+.buttons-page-length
+{
+    position: relative !important;
+    right: 195px !important;
+}
+.form-check {
+    padding-right: 1.5em;
+}
+.form-check .form-check-input {
+    float: right;
+    margin-right: -1.5em;
+}
+.add-sec button,
+.add-store-sec button,
+.add-price-sec button
+{
+    float: left;
+}
+.add-sec h2,
+.add-store-sec h2,
+.add-price-sec h2
+{
+    float: right;
+}
+.close
+{
+    float: left
+}
+/* Start rtl Rules */
+
+/* Start Custom Media Query */
+@media (max-width: 992px)
+{
+    .sidebar-toggle-small
+    {
+        transform: translateX(300px);
+    }
+    .wraper .main-content
+    {
+        margin-right: 0 !important;
+    }
+}
+/* End Custom Media Query */
+@media print {
+    *
+    {
+        direction: rtl;
+    }
+}

@@ -1,0 +1,76 @@
+/* Start Main Rules For RTL */
+body {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    text-align: right;
+    font-size: .98em
+ }
+ .item-name {
+    float: right;
+}
+ .item-icon {
+    float: left;
+}
+.form-check {
+    padding-right: 1.25rem;
+}
+.form-check-input {
+    margin-right: -1.25rem;
+}
+.wrapper aside {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    font-size: .94em
+}
+.wrapper aside .items a span.main-icon {
+    padding-left: 5px
+}
+.wrapper header .search-sec {
+    margin-right: auto !important;
+}
+.wrapper header .search-sec div.text-box .close {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    z-index: 1000;
+}
+.wrapper header .dropdown-menu {
+    text-align: right;
+}
+.content-wrapper-toggle {
+    margin-right: 275px;
+}
+.toggle-aside {
+    transform: translateX(290px);
+}
+.wrapper header .dropdown-menu .time {
+    position: relative;
+    bottom: -7px;
+    left: -8px;
+}
+.wrapper .content-wrapper .content .statistics .inner .icon {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+}
+.calendar-content {
+    margin-right: 0 !important
+}
+.calendar-content .col-calendar {
+    padding-right: 0 !important
+}
+.calendar-content .col-img {
+    padding-left: 0 !important
+}
+table.dataTable thead th, table.dataTable thead td, table.dataTable tfoot th, table.dataTable tfoot td {
+    text-align: right !important;
+}
+ /* End Main Rules For RTL */
+ @media screen and (max-width: 767px) {
+    .calendar-content .col-calendar, .calendar-content .col-img {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+}
